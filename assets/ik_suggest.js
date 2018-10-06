@@ -159,7 +159,7 @@ var pluginName = "ik_suggest",
 		
 		var plugin = event.data.plugin;
 		
-		setTimeout(function() { plugin.list.hide(); }, 200);
+		setTimeout(function() { plugin.list.empty().hide(); }, 200);
 		
 	};
 
