@@ -70,14 +70,6 @@ var pluginName = "ik_suggest",
 	 * @param {object} event.data - Event data.
 	 * @param {object} event.data.plugin - Reference to plugin.
 	 */
-	Plugin.prototype.onFocus = function (event) {
-		
-		var plugin;
-		
-		plugin = event.data.plugin;
-
-	};
-	
 	/** 
 	 * Handles kedown event on text field.
 	 * 
