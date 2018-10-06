@@ -41,7 +41,6 @@
 			})
 			.addClass('ik_progressbar')
 			.on('keydown.ik', {'plugin': this}, this.onKeyDown);
-      ;
 		
 		this.fill = $('<div/>')
 			.addClass('ik_fill');
