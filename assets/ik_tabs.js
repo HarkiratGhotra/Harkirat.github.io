@@ -140,23 +140,23 @@
        
     switch (event.keyCode) {
         case ik_utils.keys.left:
-       next = ind <= $tabs.length - 1 ? --ind : ind - 1;
+       next = ind < 1  ? ind : ind - 1;
             plugin.selectTab({data:{'plugin': plugin, 'index': next}});
             break;
         break;
         case ik_utils.keys.up:
-        next = ind <= $tabs.length - 1 ? --ind : ind - 1;
+        next = ind < 1  ? ind : ind - 1;
             plugin.selectTab({data:{'plugin': plugin, 'index': next}});
             break;
             //break;
         case ik_utils.keys.right:
          
-            next = ind >0? ind+1 : ind+1;
+            next = ind >1? ind : ind+1;
             plugin.selectTab({data:{'plugin': plugin, 'index': next}});
             break;
         break;
         case ik_utils.keys.down:
-        next = ind >0? ind+1 : ind+1;
+        next = ind >1? ind : ind+1;
             plugin.selectTab({data:{'plugin': plugin, 'index': next}});
             //break;
             break;
